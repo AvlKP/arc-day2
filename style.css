@@ -1,15 +1,16 @@
 :root {
-    --primary: black;
-    --secondary: white;
-    --active: lightgray;
+    --primary:black;
+    --secondary:white;
+    --active:lightgray;
 }
 
 .dark-mode {
-    --primary: white;
-    --secondary: black;
+    --primary:white;
+    --secondary:black;
 }
 
 body {
+    background-color: var(--secondary);
     margin: 0;
     display: flex;
     align-items: center;
@@ -18,6 +19,8 @@ body {
 }
 
 body * {
+    color: var(--primary);
+    background-color: var(--secondary);
     font-family: 'Righteous', cursive;
 }
 
