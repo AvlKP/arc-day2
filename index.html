@@ -15,20 +15,22 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <!-- Menu utama permainan -->
         <div class="menu-container">
             <div class="logo">Rock, Paper, Scissors!</div>
             <div class="menu">
-                <button type="button" class="menu-button" id="start">
+                <button type="button" class="menu-button" id="start-game">
                     START
                 </button>
-                <button type="button" class="menu-button" id="history" disabled>
+                <button type="button" class="menu-button" id="open-history">
                     HISTORY
                 </button>
-                <button type="button" class="menu-button" id="credits" disabled>
+                <button type="button" class="menu-button" id="open-credits">
                     CREDITS
                 </button>
             </div>
         </div>
+        <!-- Permainan -->
         <div class="game">
             <div id="timer">10</div>
             <div class="cards">
@@ -72,9 +74,66 @@
             <div id="score">0-0</div>
             <button class="round-button" id="stop">X</button>
         </div>
+        <!-- Riwayat skor -->
         <div class="history">
-            
+            <h2>HISTORY</h2>
+            <div class="scroll-container">
+                <table id="history-table">
+                    <thead>
+                        <tr>
+                            <th>NO.</th>
+                            <th>WIN</th>
+                            <th>LOSE</th>
+                            <th>DRAW</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <button class="round-button" id="close-history">X</button>
         </div>
+        <!-- Asset yang digunakan -->
+        <div class="credits">
+            <h2>CREDITS</h2>
+            <p>
+                Paper by Studio Fibonacci from
+                <a
+                    href="https://thenounproject.com/browse/icons/term/paper/"
+                    target="_blank"
+                    title="Paper Icons"
+                    >Noun Project</a
+                >
+            </p>
+            <p>
+                Scissors by Studio Fibonacci from
+                <a
+                    href="https://thenounproject.com/browse/icons/term/scissors/"
+                    target="_blank"
+                    title="Scissors Icons"
+                    >Noun Project</a
+                >
+            </p>
+            <p>
+                rock by Studio Fibonacci from
+                <a
+                    href="https://thenounproject.com/browse/icons/term/rock/"
+                    target="_blank"
+                    title="rock Icons"
+                    >Noun Project</a
+                >
+            </p>
+            <p>
+                Moon by annisa cakep from
+                <a
+                    href="https://thenounproject.com/browse/icons/term/moon/"
+                    target="_blank"
+                    title="Moon Icons"
+                    >Noun Project</a
+                >
+            </p>
+            <button class="round-button" id="close-credits">X</button>
+        </div>
+        <!-- Dark mode -->
         <button class="round-button" id="dark-mode">
             <svg
                 width="48"
@@ -88,6 +147,7 @@
                 />
             </svg>
         </button>
+        <!-- Simbol hasil permainan -->
         <div class="symbols">
             <div id="win">O</div>
             <div id="lose">X</div>
